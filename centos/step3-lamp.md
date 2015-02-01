@@ -81,3 +81,10 @@ sudo yum install php php-mysql
 ```shell
 sudo service httpd restart
 ```
+
+# 相关链接
+
+- [CentOS主页](http://www.centos.org/)
+- [Apache Http Server文档](http://httpd.apache.org/docs/2.2/)
+- [MySql文档](http://dev.mysql.com/doc/)
+- [PHP文档](http://www.php.net/docs.php)
