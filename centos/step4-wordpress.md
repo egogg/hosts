@@ -75,7 +75,7 @@ sudo find . -exec chown user_name:httpd_group_name {} +
 文件及目录权限的基本规则为：
 
 > 1. 所有文件都是664权限，即所有文件都是所有者和其他人可读，所有者（wordpress）可写。
-> 2. 所有目录都是755权限，即所有目录所有者和其他人都可访问。
+> 2. 所有目录都是775权限，即所有目录所有者和其他人都可访问。
 > 3. `wp-config.php`文件权限为660，即其他人无法访问。
 
 我们可以执行以下命令来进行我们的修改：
@@ -90,6 +90,12 @@ sudo find . -type d -exec chmod 775 {} +
 ```shell
 sudo chmod 660 wp-config.php
 ```
+WordPress更新的时候会跳出需要输入FTP信息的对话框，需要在wp-config.php中加入
+```php
+define('FS_METHOD', 'direct' );
+```
+来使得更新能顺利执行。
+
 # 参考文章
 
 - [Proper WordPress Filesystem Permissions And Ownerships](http://www.smashingmagazine.com/2014/05/08/proper-wordpress-filesystem-permissions-ownerships/)
