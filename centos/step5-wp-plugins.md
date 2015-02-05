@@ -20,3 +20,10 @@ WordPress插件及管理
         Allow from all
      </Directory>
 > ```
+
+# 二、常用插件
+
+- Jetpack：包含MarkDown功能。
+- Crayon Syntax Highlighter：功能强大的代码高亮插件。
+- Akismet ：垃圾评论过滤。
+ 
