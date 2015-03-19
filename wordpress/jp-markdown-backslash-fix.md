@@ -1,4 +1,4 @@
-# 解决WordPress JP Markdown插件反斜线(\\)丢失的问题
+# 解决 JP Markdown插件反斜线(\\)丢失的问题
 
 在使用JP-MarkDown时，` ``` code ``` ` 所表示的代码块中，代码当中的反斜线\在文章发布后会丢失，于是代码中的 `printf("\n");` 会变为 `printf("n") …`
 
